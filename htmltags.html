@@ -16,6 +16,8 @@
     <h1>HTML Page</h1>
     <hr/>
 
+    <p id="Top">Bookmark</p>
+
     <p>!DOCKTYPE : This tag determines the document is a HTML5 document</p>
     <hr/>
 
@@ -52,7 +54,11 @@
     <hr/>
 
     <p>img : This tag is used to display the image </p><br>
-        <img src="image.jpg" alt=" The image is not available" width="500" hight="300" >
+        <img src="image.jpg" alt=" The image is not available" usemap="#flower">
+        <map map="flower">
+            <area shape="react" coords="5,5,450,350" alt="This link is not available" href="https://www.youtube.com/">
+        </map>
+
     <hr/>
 
     <p>hr : This tag is used to add a horizontal line</p>
@@ -188,16 +194,37 @@
 
     <p>Using Links</p>
     <blockquote>
+
         <p>Image Link : This is how to add link to an image</p>
         <a href="https://www.youtube.com/">
             <img src="image.jpg">
         </a>
         <hr/>
+
         <p>Email Link : This is how to add link to an Email</p>
         <a href="mailto:aakashtelkar@gmail.com">Send Email</a>
         <hr/>
 
+        <p>Button Link : This is how to use link on a button</p>
         <button onclick="document.location='index.html'">Index Page</button>
+        <hr/>
+
+        <p>Internal Style a link</p>
+        <p>a:link = Style a link</p>
+        <p>a:visited = Style if the link is already visited</p>
+        <p>a:hover = Style to a link when hover</p>
+        <p>a:active = Style if the link is active</p>
+        <hr/>
+
+        <p>Link Internal Style can be combined</p>
+        <p>a: link, a: visited = This Combines the link behaviour</p>
+        <p>a: hover, a: active = This Combines the link behaviour</p>
+        <hr/>
+
+        <p>Use link to bookmark</p>
+        <p>Bookmark can be added to another page as well</p>
+        <p><a href="#Top">Go to the top</a></p>
+        <hr/>
     </blockquote>
 
 </body>
